@@ -1,0 +1,20 @@
+Name: Complex Workflow
+
+on: push
+
+jobs:
+  job1:
+    name: Print Date
+    runs-on: ubunt-latest
+    steps:
+      - name: Step One
+        uses: actions/checkout@v2
+      - name: Step Two
+      run: |
+        now=$(date)
+        echo date
+      
+
+      
+
+
