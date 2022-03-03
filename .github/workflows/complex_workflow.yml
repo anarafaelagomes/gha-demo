@@ -1,4 +1,4 @@
-Name: Complex Workflow
+name: Complex Workflow
 
 on: push
 
@@ -10,10 +10,10 @@ jobs:
       - name: Step One
         uses: actions/checkout@v2
       - name: Step Two
-      run: |
-        now=$(date)
-        echo date
-      
+        run: |
+          now=$(date)
+          echo $now
+
 
       
 
