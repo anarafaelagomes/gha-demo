@@ -10,7 +10,5 @@
       - name: checkout
         uses: actions/checkout@v2
       - name: print date
-        run: env | 
-          now = $(date)
-          echo $now
-    
+        run: | 
+          date
