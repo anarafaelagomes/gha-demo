@@ -1,24 +1,16 @@
-name: Complex Workflow
-
-on: 
-  push:
-    branches: main
-
-jobs:
+ name: Complex Workflow
+ 
+ on: push
+ 
+ jobs:
+  job1:
+    name: Print Date Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: print date
+        run: | 
+          now = $(date)
+          echo $now
     
-    job1:
-      name: Print Date
-      runs-on: ubunt-latest
-      
-      steps:
-        - name: Step One
-          uses: actions/checkout@v2
-        - name: Step Two
-          run: |
-            now=$(date)
-            echo $now
-
-
-      
-
-
